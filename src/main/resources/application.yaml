@@ -1,0 +1,25 @@
+###application.yaml form is human redable and reduce repeated part
+# For Different profiles we have to add different yml file eg. if profilles:dev then dev.yml file we have to create
+# or we can create in inside single file many profile by 3 dash and adding seprate profiles
+# But in production we are crreating jar files and deploying it
+server:
+    port: 8082
+    
+    spring:
+        profiles:
+               active:
+               
+              
+spring:
+     
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: Rohit
+        url: jdbc:mysql://localhost:3306/dcbapp
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+welcome:
+    message: Welcome to Daily Code Buffer!! 
